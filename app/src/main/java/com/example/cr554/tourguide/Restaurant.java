@@ -2,6 +2,7 @@ package com.example.cr554.tourguide;
 
 /**
  * Created by cr554 on 2/14/2017.
+ * Class to hold information about a given restaurant
  */
 
 public class Restaurant {

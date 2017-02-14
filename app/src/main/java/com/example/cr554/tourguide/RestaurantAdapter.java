@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 /**
  * Created by cr554 on 2/14/2017.
+ * adapter to dynamically load the items in the list
  */
 
 public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
@@ -19,7 +20,6 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
         super(context, 0,restaurants);
     }
     @Override
-
     public View getView (int position, View convertView, ViewGroup parent){
 
         View listItemView = convertView;
