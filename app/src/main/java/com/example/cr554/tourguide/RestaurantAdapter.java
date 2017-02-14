@@ -1,7 +1,6 @@
 package com.example.cr554.tourguide;
 
 import android.app.Activity;
-import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,16 +28,16 @@ public class RestaurantAdapter extends ArrayAdapter<Restaurant> {
         Restaurant currentRestaurant= getItem(position);
 
         TextView ratingTextView = (TextView) listItemView.findViewById(R.id.rating);
-        ratingTextView.setText(currentRestaurant.getRating());
+        ratingTextView.setText(currentRestaurant.getmRating());
 
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.restaurantName);
-        nameTextView.setText(currentRestaurant.getName());
+        nameTextView.setText(currentRestaurant.getmName());
 
         TextView foodTextView = (TextView) listItemView.findViewById(R.id.typeOfFood);
-        foodTextView.setText(currentRestaurant.getTypeOfFood());
+        foodTextView.setText(currentRestaurant.getmTypeOfFood());
 
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.streetAddress);
-        addressTextView.setText(currentRestaurant.getAddress());
+        addressTextView.setText(currentRestaurant.getmAddress());
 
         return listItemView;
     }

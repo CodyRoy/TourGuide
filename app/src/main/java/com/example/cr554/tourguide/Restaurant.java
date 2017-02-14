@@ -6,33 +6,33 @@ package com.example.cr554.tourguide;
  */
 
 public class Restaurant {
-    private String rating;
-    private String name;
-    private String typeOfFood;
-    private String address;
+    private String mRating;
+    private String mName;
+    private String mTypeOfFood;
+    private String mAddress;
 
     public Restaurant(String i, String restaurantName, String food, String streetAddress){
         //should use setters?
-        rating = i;
-        name = restaurantName;
-        typeOfFood = food;
-        address = streetAddress;
+        mRating = i;
+        mName = restaurantName;
+        mTypeOfFood = food;
+        mAddress = streetAddress;
     }
 
-    public String getRating() {
-        return rating;
+    public String getmRating() {
+        return mRating;
     }
 
-    public String getName() {
-        return name;
+    public String getmName() {
+        return mName;
     }
 
-    public String getTypeOfFood() {
-        return typeOfFood;
+    public String getmTypeOfFood() {
+        return mTypeOfFood;
     }
 
-    public String getAddress(){
-        return address;
+    public String getmAddress(){
+        return mAddress;
     }
 
 }

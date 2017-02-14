@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.cr554.tourguide.RestaurantActivity"></activity>
+        <activity android:name=".RestaurantActivity" />
+        <activity android:name=".ParkActivity"></activity>
     </application>
 
 </manifest>
