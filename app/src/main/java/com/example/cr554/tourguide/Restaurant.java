@@ -5,13 +5,13 @@ package com.example.cr554.tourguide;
  * Class to hold information about a given restaurant
  */
 
-public class Restaurant {
+class Restaurant {
     private String mRating;
     private String mName;
     private String mTypeOfFood;
     private String mAddress;
 
-    public Restaurant(String i, String restaurantName, String food, String streetAddress){
+    Restaurant(String i, String restaurantName, String food, String streetAddress){
         //should use setters?
         mRating = i;
         mName = restaurantName;
@@ -19,19 +19,19 @@ public class Restaurant {
         mAddress = streetAddress;
     }
 
-    public String getmRating() {
+    String getmRating() {
         return mRating;
     }
 
-    public String getmName() {
+    String getmName() {
         return mName;
     }
 
-    public String getmTypeOfFood() {
+    String getmTypeOfFood() {
         return mTypeOfFood;
     }
 
-    public String getmAddress(){
+    String getmAddress(){
         return mAddress;
     }
 
