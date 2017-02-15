@@ -23,7 +23,7 @@ class EventAdapter extends ArrayAdapter<EventMilford>{
     public View getView (int position, View convertView, ViewGroup parent){
         View listItemView = convertView;
         if(listItemView==null){
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.park_list_item, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.event_list_item, parent, false);
         }
         EventMilford currentEvent = getItem(position);
 
