@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
         restaurantTextView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                //explicit intent -> open new activity
                 Intent restaurantIntent = new Intent(MainActivity.this,RestaurantActivity.class);
 
                 startActivity(restaurantIntent);
@@ -31,6 +30,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent parkIntent = new Intent(MainActivity.this, ParkActivity.class);
                 startActivity(parkIntent);
+            }
+        });
+
+        TextView eventTextView = (TextView) findViewById(R.id.event);
+        eventTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent eventIntent = new Intent(MainActivity.this, EventActivity.class);
+                startActivity(eventIntent);
             }
         });
     }
