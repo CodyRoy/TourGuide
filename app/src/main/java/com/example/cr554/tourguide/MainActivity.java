@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +22,15 @@ public class MainActivity extends AppCompatActivity {
                 Intent restaurantIntent = new Intent(MainActivity.this,RestaurantActivity.class);
 
                 startActivity(restaurantIntent);
+            }
+        });
+
+        TextView parkTextView = (TextView) findViewById(R.id.park);
+        parkTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent parkIntent = new Intent(MainActivity.this, ParkActivity.class);
+                startActivity(parkIntent);
             }
         });
     }

@@ -1,17 +1,15 @@
 package com.example.cr554.tourguide;
-
-import android.media.Image;
-
 /**
- * Created by cr554 on 2/14/2017.
+ * Created by cr554 on 2/14/2017.\
+ * a class to hold information about various parks
  */
 
 public class Park {
-    private Image mImg;
+    private int mImg;
     private String mName;
     private String mLocation;
 
-    public Image getmImg() {
+    public int getmImg() {
         return mImg;
     }
 
@@ -21,5 +19,11 @@ public class Park {
 
     public String getmName() {
         return mName;
+    }
+
+    public Park(int vImg, String vName, String vLoacation){
+        mImg=vImg;
+        mName=vName;
+        mLocation=vLoacation;
     }
 }
