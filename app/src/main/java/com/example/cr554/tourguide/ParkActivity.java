@@ -15,6 +15,9 @@ public class ParkActivity extends AppCompatActivity {
         //make+populate a list of parks
         ArrayList<Park> parks = new ArrayList<>();
         parks.add(new Park(R.drawable.eisenhower,"Eisenhower State Park", "780 North Street"));
+        parks.add(new Park(R.drawable.silver_sands_300,"Silver Sands Beach","The Coast"));
+        parks.add(new Park(R.drawable.walnut,"Walnut Beach", "A little below Silver Sands"));
+        parks.add(new Park(R.drawable.woodmont,"Woodmont Beach", "A Little above Silver Sands"));
 
         //create +set the adapter
         ParkAdapter parkAdapter = new ParkAdapter(this, parks);
